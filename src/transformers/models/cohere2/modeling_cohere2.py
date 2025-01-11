@@ -952,7 +952,7 @@ class Cohere2ForCausalLM(Cohere2PreTrainedModel, GenerationMixin):
 
 
 class Cohere2ForSequenceClassification(Cohere2PreTrainedModel):
-    def __init__(self, config):
+    def __init__(self, config: Cohere2Config):
         super().__init__(config)
         self.num_labels = config.num_labels
         self.model = Cohere2Model(config)

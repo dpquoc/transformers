@@ -1820,7 +1820,7 @@ else:
         ]
     )
     _import_structure["models.cohere"].extend(["CohereForCausalLM", "CohereModel", "CoherePreTrainedModel"])
-    _import_structure["models.cohere2"].extend(["Cohere2ForCausalLM", "Cohere2Model", "Cohere2PreTrainedModel"])
+    _import_structure["models.cohere2"].extend(["Cohere2ForCausalLM", "Cohere2Model", "Cohere2PreTrainedModel", "Cohere2ForSequenceClassification"])
     _import_structure["models.colpali"].extend(
         [
             "ColPaliForRetrieval",
@@ -6821,6 +6821,7 @@ if TYPE_CHECKING:
             Cohere2ForCausalLM,
             Cohere2Model,
             Cohere2PreTrainedModel,
+            Cohere2ForSequenceClassification,
         )
         from .models.colpali import (
             ColPaliForRetrieval,

@@ -2267,6 +2267,12 @@ class Cohere2ForCausalLM(metaclass=DummyObject):
     def __init__(self, *args, **kwargs):
         requires_backends(self, ["torch"])
 
+class Qwen2ForSequenceClassification(metaclass=DummyObject):
+    _backends = ["torch"]
+
+    def __init__(self, *args, **kwargs):
+        requires_backends(self, ["torch"])
+
 
 class Cohere2Model(metaclass=DummyObject):
     _backends = ["torch"]

@@ -1,13 +1,13 @@
 name: Self-hosted runner (scheduled)
 
 
-on:
-  repository_dispatch:
-  schedule:
-    - cron: "17 2 * * *"
-  push:
-    branches:
-      - run_scheduled_ci*
+# on:
+#   repository_dispatch:
+#   schedule:
+#     - cron: "17 2 * * *"
+#   push:
+#     branches:
+#       - run_scheduled_ci*
 
 jobs:
   model-ci:

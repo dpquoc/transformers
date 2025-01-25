@@ -1,12 +1,12 @@
 name: Doctests
 
-on:
-  push:
-    branches:
-      - run_doctest*
-  repository_dispatch:
-  schedule:
-    - cron: "17 2 * * *"
+# on:
+#   push:
+#     branches:
+#       - run_doctest*
+#   repository_dispatch:
+#   schedule:
+#     - cron: "17 2 * * *"
 
 env:
   NUM_SLICES: 3
